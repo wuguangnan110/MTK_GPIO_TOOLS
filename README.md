@@ -1,2 +1,3 @@
-# MTK_GPIO_TOOLS
-方便在mt6765平台调试工具
+# Pax_Gpio_Tools_V1.0.0
+## 界面
+![image](Images/tools.png)

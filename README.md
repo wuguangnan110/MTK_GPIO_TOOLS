@@ -15,9 +15,10 @@
 * [PULL_SEL] 只对input pin有效，1：上拉 0：下拉
 * ([R1 R0]) 当前GPIO pin的（上下拉）并联电阻的使能状态
 ```
-1 0表示enable R1，disable R0
-0 1表示disable R1，enable R0
-1 1表示enable R1， enable R0
+0 0 表示disable R1，表示disable R0
+1 0 表示enable R1，disable R0
+0 1 表示disable R1，enable R0
+1 1 表示enable R1， enable R0
 ```
 
 > 注意：只有部分GPIO支持[R1 R0]并联电阻上下拉功能，且[PULL_EN]必须使能。

@@ -1,0 +1,57 @@
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\bin\Debug\Pax Gpio Tool.exe.config
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\bin\Debug\Pax Gpio Tool.exe.manifest
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\bin\Debug\Pax Gpio Tool.application
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\bin\Debug\Pax Gpio Tool.exe
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\bin\Debug\Pax Gpio Tool.pdb
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool_MarkupCompile.cache
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool_MarkupCompile.lref
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool.g.resources
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\Pax_Gpio_Tool.Properties.Resources.resources
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool.exe.manifest
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool.application
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool.exe
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool.pdb
+C:\Users\wugangnan\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\bin\Debug\Pax Gpio Tool.exe.config
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\bin\Debug\Pax Gpio Tool.exe.manifest
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\bin\Debug\Pax Gpio Tool.application
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\bin\Debug\Pax Gpio Tool.exe
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\bin\Debug\Pax Gpio Tool.pdb
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\Pax_Gpio_tools.g.cs
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool_MarkupCompile.cache
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool_MarkupCompile.lref
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\Pax_Gpio_tools.baml
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool.g.resources
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\Pax_Gpio_Tool.Properties.Resources.resources
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool.exe.manifest
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool.application
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool.exe
+H:\C#\WPF\MTK_GPIO_TOOLS_CODE-master\WpfApp1\WpfApp1\obj\Debug\Pax Gpio Tool.pdb
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\bin\Debug\Pax Gpio Tool.exe.config
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\bin\Debug\Pax Gpio Tool.exe.manifest
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\bin\Debug\Pax Gpio Tool.application
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\bin\Debug\Pax Gpio Tool.exe
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\bin\Debug\Pax Gpio Tool.pdb
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\mainwindow.g.cs
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\App.g.cs
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\Pax Gpio Tool_MarkupCompile.cache
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\Pax Gpio Tool_MarkupCompile.lref
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\mainwindow.baml
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\Pax Gpio Tool.g.resources
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\Pax_Gpio_Tool.Properties.Resources.resources
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\Pax Gpio Tool.exe.manifest
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\Pax Gpio Tool.application
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\Pax Gpio Tool.exe
+H:\wugn\md\MTK_GPIO_TOOLS\Code\Pax_Gpio_Tools\WpfApp1\obj\Debug\Pax Gpio Tool.pdb

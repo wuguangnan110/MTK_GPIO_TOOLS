@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{BD037459-5E47-4F39-844F-8A936D2F3407}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Pax_Gpio_Tools_Set_Up", "Pax_Gpio_Tools_Set_Up\Pax_Gpio_Tools_Set_Up.vdproj", "{996F5BED-26FE-4FF7-AE67-DC3BB795B200}"
+EndProject
+Global
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD037459-5E47-4F39-844F-8A936D2F3407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD037459-5E47-4F39-844F-8A936D2F3407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD037459-5E47-4F39-844F-8A936D2F3407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD037459-5E47-4F39-844F-8A936D2F3407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{996F5BED-26FE-4FF7-AE67-DC3BB795B200}.Debug|Any CPU.ActiveCfg = Debug
+		{996F5BED-26FE-4FF7-AE67-DC3BB795B200}.Release|Any CPU.ActiveCfg = Release
+		{996F5BED-26FE-4FF7-AE67-DC3BB795B200}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63ADC5AF-B151-42E6-ADB6-55A5358A0066}
+	EndGlobalSection
+EndGlobal

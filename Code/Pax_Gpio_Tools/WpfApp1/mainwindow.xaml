@@ -1,0 +1,67 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Pax Gpio Tool V1.0.0    吴港南 18682042792" Height="540.628" Width="824">
+    <Grid Margin="0,0,0,-10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="391*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#FF73A05E" Offset="0.367"/>
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FF6EBF61" Offset="2"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="版本信息" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Version"/>
+        <Button Content="获取全部" HorizontalAlignment="Left" Margin="121,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_All_Gpio"/>
+        <TextBox Name="TextBox1" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Left" Height="324" Margin="24,145,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="722" TextChanged="TextBox_TextChanged" FontSize="14"/>
+        <Button Content="帮助" HorizontalAlignment="Left" Margin="698,10,0,0" VerticalAlignment="Top" Width="48" Height="30" Click="Button_Click_help" RenderTransformOrigin="-0.305,0.564"/>
+        <Button Content="清空log" HorizontalAlignment="Left" Margin="635,10,0,0" VerticalAlignment="Top" Width="58" Height="30" Click="Button_Click_Clear_MTK_Log"/>
+        <Button Content="clear" HorizontalAlignment="Left" Margin="382,474,0,0" VerticalAlignment="Top" Width="31" Height="22" Click="Button_Click_Clear_Log" FontSize="10"/>
+        <ComboBox Name="comboBox1" IsEditable="True"  HorizontalAlignment="Left" Margin="249,10,0,0" VerticalAlignment="Top" Width="51" Height="30" RenderTransformOrigin="0.497,-0.226" SelectionChanged="ComboBox_SelectionChanged" FontSize="14"/>
+        <Button Content="自动检测" HorizontalAlignment="Left" Margin="24,50,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Check_Path" Height="24"/>
+        <TextBox Name="TextBox2" HorizontalAlignment="Left" Height="24" Margin="121,50,0,0" TextWrapping="Wrap" Text="/sys/devices/platform/1000b000.pinctrl/mt_gpio"  VerticalAlignment="Top" Width="625"/>
+        <Label Content="SET" HorizontalAlignment="Left" Margin="24,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="29"/>
+        <Label Content="GPIO" HorizontalAlignment="Left" Margin="58,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="40"/>
+        <Label Content="      VALUE" HorizontalAlignment="Left" Margin="103,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="74"/>
+        <Label Content="MODE" HorizontalAlignment="Left" Margin="182,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10"/>
+        <Label Content="      DIR" HorizontalAlignment="Left" Margin="228,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" RenderTransformOrigin="1.772,0.525" Width="59"/>
+        <Label Content="     DOUT" HorizontalAlignment="Left" Margin="292,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="77"/>
+        <Label Content="     DIN" HorizontalAlignment="Left" Margin="374,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="73"/>
+        <Label Content="   PULL EN" HorizontalAlignment="Left" Margin="592,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" RenderTransformOrigin="1.769,0.444" Width="73"/>
+        <Label Content="   PULL SEL" HorizontalAlignment="Left" Margin="671,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" RenderTransformOrigin="1.736,0.404" Width="75"/>
+        <Button Content="获取" HorizontalAlignment="Left" Margin="201,10,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Gpio"/>
+        <Label Content="   IES" HorizontalAlignment="Left" Margin="548,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="39"/>
+        <Label Name="GPIO" Content="000" HorizontalAlignment="Left" Margin="58,113,0,0" VerticalAlignment="Top" Height="27" Width="40"/>
+        <Label Name="VALUE" Content="000000000" HorizontalAlignment="Left" Margin="103,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.774,0.611" Width="74" Height="27"/>
+        <ComboBox x:Name="MODE" HorizontalAlignment="Left" Margin="182,112,0,0" VerticalAlignment="Top" Width="41" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="MODE_SelectionChanged"/>
+        <ComboBox x:Name="DIR" HorizontalAlignment="Left" Margin="228,112,0,0" VerticalAlignment="Top" Width="59" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="DIR_SelectionChanged2"/>
+        <ComboBox x:Name="DOUT" HorizontalAlignment="Left" Margin="292,112,0,0" VerticalAlignment="Top" Width="77" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="DOUT_SelectionChanged3"/>
+
+        <ComboBox x:Name="DIN" HorizontalAlignment="Left" Margin="374,112,0,0" VerticalAlignment="Top" Width="73" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="DIN_SelectionChanged4"/>
+        <ComboBox x:Name="IES" HorizontalAlignment="Left" Margin="548,112,0,0" VerticalAlignment="Top" Width="39" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="IES_SelectionChanged7"/>
+        <ComboBox x:Name="PULLSEL" HorizontalAlignment="Left" Margin="671,112,0,0" VerticalAlignment="Top" Width="75" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="PULLSEL_SelectionChanged9"/>
+        <ComboBox x:Name="PULLEN" HorizontalAlignment="Left" Margin="592,112,0,0" VerticalAlignment="Top" Width="73" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="PULLEN_SelectionChanged8"/>
+        <Label Content="SMT" HorizontalAlignment="Left" Margin="503,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="40"/>
+        <Label Content=" DRIVE" HorizontalAlignment="Left" Margin="452,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="46" RenderTransformOrigin="2.441,0.525"/>
+        <ComboBox x:Name="DRIVE" HorizontalAlignment="Left" Margin="452,112,0,0" VerticalAlignment="Top" Width="46" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="DRIVE_SelectionChanged5"/>
+        <ComboBox x:Name="SMT" HorizontalAlignment="Left" Margin="503,112,0,0" VerticalAlignment="Top" Width="40" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="SMT_SelectionChanged6"/>
+        <Button Content="set" HorizontalAlignment="Left" Margin="24,115,0,0" VerticalAlignment="Top" Width="29" Background="#FF28BF36" Click="Button_Click_Set_Gpio_Value"/>
+        <Ellipse Name="led" Fill="#FFDC1111" HorizontalAlignment="Left" Height="10" Margin="764,18,0,0" Stroke="Red" VerticalAlignment="Top" Width="10" RenderTransformOrigin="-0.682,-3"/>
+        <Button Content="PMIC" HorizontalAlignment="Left" Margin="305,10,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_PMIC_Info"/>
+        <Button Content="内存" HorizontalAlignment="Left" Margin="353,10,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Mem_Info"/>
+        <Button Content="电池" HorizontalAlignment="Left" Margin="401,10,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Battery_Info"/>
+        <Button Content="提取log" HorizontalAlignment="Left" Margin="576,10,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_MTK_Log"/>
+        <Button Content="截屏" HorizontalAlignment="Left" Margin="449,10,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_ScreenCap"/>
+        <Button Content="reboot" HorizontalAlignment="Left" Margin="517,10,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Reboot"/>
+        <Label Content="  R1 R0" Name="R1R0" HorizontalAlignment="Left" Margin="751,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="45" Visibility="Collapsed"/>
+        <ComboBox x:Name="R1R0_Value" HorizontalAlignment="Left" Margin="751,112,0,0" VerticalAlignment="Top" Width="45" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="R0R1_SelectionChanged10" Visibility="Collapsed"/>
+    </Grid>
+
+</Window>

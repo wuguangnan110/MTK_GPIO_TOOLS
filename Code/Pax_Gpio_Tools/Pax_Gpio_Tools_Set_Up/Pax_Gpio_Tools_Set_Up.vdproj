@@ -15,7 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_2AECFBDBC3E44110B2E9C2276D10C599"
+        "MsmKey" = "8:_23CC7A4CFB1F4F2B9C51318174DE906A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2DF2374CABAD4CC7B40DABBA2C7C2B43"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -33,26 +39,38 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A4A30CACE2374B85B9BAF302A6741B30"
+        "MsmKey" = "8:_88E3F86E29E744E8AC04A59F3ADDEE76"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_ABFB39895BC641FEA01EEAD14FFD485E"
+        "MsmKey" = "8:_946DA5C95026450D85C36F95824E7497"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4E072523FB75BE390D730D267D07EFCB"
+        "MsmKey" = "8:_9E90884E11114B1CBF851D770F0C37BD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F68F2FD111924B01BC63F07513872A4E"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_6A64A2532AF5474FAF44E6A16CBE1AA1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_4E072523FB75BE390D730D267D07EFCB"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -150,10 +168,30 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2AECFBDBC3E44110B2E9C2276D10C599"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_23CC7A4CFB1F4F2B9C51318174DE906A"
             {
-            "SourcePath" = "8:C:\\Users\\wugangnan\\Desktop\\My_Tool\\Pax_Gpio_Tool\\README.md"
-            "TargetName" = "8:README.md"
+            "SourcePath" = "8:C:\\Users\\wugangnan\\Desktop\\empty"
+            "TargetName" = "8:empty"
+            "Tag" = "8:"
+            "Folder" = "8:_4C34768E744F46D9BC20EFDA95E6AAB7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2DF2374CABAD4CC7B40DABBA2C7C2B43"
+            {
+            "SourcePath" = "8:C:\\Users\\wugangnan\\Desktop\\My_Tool\\Pax_Gpio_Tool_Android11\\MT6765 GPIO Ball name对应表.pdf"
+            "TargetName" = "8:MT6765 GPIO Ball name对应表.pdf"
             "Tag" = "8:"
             "Folder" = "8:_066857D18B1742F6BCC9921E1F46EB7A"
             "Condition" = "8:"
@@ -201,10 +239,30 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A4A30CACE2374B85B9BAF302A6741B30"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_88E3F86E29E744E8AC04A59F3ADDEE76"
             {
-            "SourcePath" = "8:C:\\Users\\wugangnan\\Desktop\\My_Tool\\Pax_Gpio_Tool\\MT6765 GPIO Ball name对应表.pdf"
-            "TargetName" = "8:MT6765 GPIO Ball name对应表.pdf"
+            "SourcePath" = "8:C:\\Users\\wugangnan\\Desktop\\empty"
+            "TargetName" = "8:empty"
+            "Tag" = "8:"
+            "Folder" = "8:_86DFA835817240BA911537C8C9497B9B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_946DA5C95026450D85C36F95824E7497"
+            {
+            "SourcePath" = "8:C:\\Users\\wugangnan\\Desktop\\My_Tool\\Pax_Gpio_Tool_Android11\\README.md"
+            "TargetName" = "8:README.md"
             "Tag" = "8:"
             "Folder" = "8:_066857D18B1742F6BCC9921E1F46EB7A"
             "Condition" = "8:"
@@ -221,12 +279,32 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ABFB39895BC641FEA01EEAD14FFD485E"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9E90884E11114B1CBF851D770F0C37BD"
             {
-            "SourcePath" = "8:C:\\Users\\wugangnan\\Desktop\\My_Tool\\Pax_Gpio_Tool\\Images\\favicon.ico"
-            "TargetName" = "8:favicon.ico"
+            "SourcePath" = "8:C:\\Users\\wugangnan\\Desktop\\My_Tool\\Pax_Gpio_Tool_Android10\\Images\\paxicon.ico"
+            "TargetName" = "8:paxicon.ico"
             "Tag" = "8:"
-            "Folder" = "8:_86DFA835817240BA911537C8C9497B9B"
+            "Folder" = "8:_066857D18B1742F6BCC9921E1F46EB7A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F68F2FD111924B01BC63F07513872A4E"
+            {
+            "SourcePath" = "8:..\\WpfApp1\\bin\\Debug\\tools\\kernel_to_utc.py"
+            "TargetName" = "8:kernel_to_utc.py"
+            "Tag" = "8:"
+            "Folder" = "8:_D9111F44933445319422C1D876D9DF5D"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -257,6 +335,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_4C34768E744F46D9BC20EFDA95E6AAB7"
+                    {
+                    "Name" = "8:log"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_838007B670344CEB867275F4A66BE6C6"
+                        "Folders"
+                        {
+                        }
+                    }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_86DFA835817240BA911537C8C9497B9B"
                     {
                     "Name" = "8:Images"
@@ -264,6 +353,17 @@
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
                     "Property" = "8:_8C4D837555694D1CB7AC0D7EB9171E6A"
+                        "Folders"
+                        {
+                        }
+                    }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_D9111F44933445319422C1D876D9DF5D"
+                    {
+                    "Name" = "8:tools"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_5391D3324D504B5E91C954339F1FB87D"
                         "Folders"
                         {
                         }
@@ -309,7 +409,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Pax_Gpio_Tools_Set_Up"
         "ProductCode" = "8:{095DEFFB-6497-40BF-AD5F-6D4A487CBBCC}"
-        "PackageCode" = "8:{3806E7BC-2BA6-440C-8C59-1E4D73B6426F}"
+        "PackageCode" = "8:{FB5A39E8-7D41-4231-839C-599DD6481C61}"
         "UpgradeCode" = "8:{1FEC2BE7-C696-4ECE-8B49-ADE07FAA0293}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
@@ -429,7 +529,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_4515434949A74B5F80928964A7B4F1F1"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_116F2F622849428499E9C511A771C703"
             {
             "Name" = "8:Pax_Gpio_Tools"
             "Arguments" = "8:"
@@ -440,10 +540,10 @@
             "Target" = "8:_6A64A2532AF5474FAF44E6A16CBE1AA1"
             "Folder" = "8:_A73E0AD723E042ECADFCC85F580C097E"
             "WorkingFolder" = "8:_066857D18B1742F6BCC9921E1F46EB7A"
-            "Icon" = "8:"
+            "Icon" = "8:_9E90884E11114B1CBF851D770F0C37BD"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A587FD32ABBF4C8E8B1469E0DF2BF437"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_3747A9DC0BAC464FB32A6C3C6261CE9E"
             {
             "Name" = "8:Pax_Gpio_Tools"
             "Arguments" = "8:"
@@ -454,7 +554,7 @@
             "Target" = "8:_6A64A2532AF5474FAF44E6A16CBE1AA1"
             "Folder" = "8:_7F8EBA1F461144CDBB2597DAD3045A51"
             "WorkingFolder" = "8:_066857D18B1742F6BCC9921E1F46EB7A"
-            "Icon" = "8:_ABFB39895BC641FEA01EEAD14FFD485E"
+            "Icon" = "8:_9E90884E11114B1CBF851D770F0C37BD"
             "Feature" = "8:"
             }
         }

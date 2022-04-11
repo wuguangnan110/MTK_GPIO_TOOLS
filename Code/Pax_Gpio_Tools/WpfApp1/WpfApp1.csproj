@@ -55,7 +55,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>favicon %281%29.ico</ApplicationIcon>
+    <ApplicationIcon>paxicon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>83DB5505457AE718830FEC3971E496C1AE1A1593</ManifestCertificateThumbprint>
@@ -104,18 +104,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Installer1.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Installer1.Designer.cs">
-      <DependentUpon>Installer1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Installer2.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Installer2.Designer.cs">
-      <DependentUpon>Installer2.cs</DependentUpon>
-    </Compile>
     <Compile Include="mainwindow.xaml.cs">
       <DependentUpon>mainwindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -161,9 +149,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="favicon %281%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\btncheckon1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btncheckon21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="paxicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

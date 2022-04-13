@@ -769,12 +769,28 @@ namespace WpfApp1
                 MessageBox.Show("请连接手机adb");
             }
         }
-        private async void Button_Click_Scp_Log(object sender, RoutedEventArgs e)
+
+
+        private void RunBat(string batPath)
+        {
+            Process pro = new Process();
+
+            FileInfo file = new FileInfo(batPath);
+            pro.StartInfo.WorkingDirectory = file.Directory.FullName;
+            pro.StartInfo.FileName = batPath;
+            pro.StartInfo.CreateNoWindow = false;
+            pro.Start();
+            pro.WaitForExit();
+        }
+
+        private void Button_Click_Scp_Log(object sender, RoutedEventArgs e)
         {
             try
             {
+                
                 if (adb_status)
                 {
+                    /*
                     if (Button_log.Content.ToString() == "scp获取")
                     {
                         Button_log.Content = "停止scp";
@@ -793,7 +809,10 @@ namespace WpfApp1
                         Button_log.Content = "scp获取";
                         cmd_isRun = "stop";
                     }
+                    */
+                    RunBat(Environment.CurrentDirectory + "\\tools\\scplog.bat");
                 }
+                
             }
             catch
             {
@@ -985,13 +1004,28 @@ namespace WpfApp1
                     p.Close();
                     TextBox1.Dispatcher.BeginInvoke(action_battery);
 
-                    p.StartInfo.Arguments = "/c adb shell cat /sys/class/power_supply/battery/current_now";
+                    //Adb_Output = "battery uevent: \r\n";
+                    //TextBox1.Dispatcher.BeginInvoke(action_battery);
+                    p.StartInfo.Arguments = "/c adb shell cat /sys/class/power_supply/battery/uevent";
                     p.Start();
                     Adb_Output = p.StandardOutput.ReadToEnd();
-                    int value = Convert.ToInt32(Adb_Output);
-                    value = value / 1000;
-                    Adb_Output = Convert.ToString(value);
+                    TextBox1.Dispatcher.BeginInvoke(action_battery);
+                    p.Close();
+
+                    //Adb_Output = "mt6370_pmu_charger uevent: \r\n";
                     //TextBox1.Dispatcher.BeginInvoke(action_battery);
+                    p.StartInfo.Arguments = "/c adb shell cat /sys/class/power_supply/mt6370_pmu_charger/uevent";
+                    p.Start();
+                    Adb_Output = p.StandardOutput.ReadToEnd();
+                    TextBox1.Dispatcher.BeginInvoke(action_battery);
+                    p.Close();
+
+                    //Adb_Output = "mtk_charger_type uevent: \r\n";
+                   // TextBox1.Dispatcher.BeginInvoke(action_battery);
+                    p.StartInfo.Arguments = "/c adb shell cat /sys/class/power_supply/mtk_charger_type/uevent";
+                    p.Start();
+                    Adb_Output = p.StandardOutput.ReadToEnd();
+                    TextBox1.Dispatcher.BeginInvoke(action_battery);
                     p.Close();
 
                     p.StartInfo.Arguments = "/c adb shell cat /sys/kernel/debug/rt-regmap/mt6370_pmu/regs";
@@ -1463,6 +1497,74 @@ namespace WpfApp1
                 await AsyncTask_Get_Dumpsys();
                 TextBox1.AppendText("\r\n" + "完成dumpsys操作！保存路径:");
                 TextBox1.AppendText("\r\n" + Log_Path);
+            }
+        }
+
+        private void GetTypefile(string path, string filetype, List<FileInfo> lst)
+        {
+            DirectoryInfo theFolder = new DirectoryInfo(path);  // 给出你的目录文件位置 
+            FileInfo[] fileInfo = theFolder.GetFiles(); // 获得当前的文件夹内的所有文件数组
+
+            foreach (FileInfo NextFile in fileInfo)   //遍历文件
+            { 
+                if (NextFile.Extension == "." + filetype)  // 得到你想要的格式
+                {
+                    lst.Add(NextFile); // 用于测试输出
+                }
+            }
+        }
+
+        private async Task<bool> AsyncTask_Apk_Install()
+        {
+            string Apk_Path = Environment.CurrentDirectory + "\\apk";
+            string result = null;
+
+            try
+            {
+                return await Task.Run(() =>
+                {
+                    List<FileInfo> lst = new List<FileInfo>();
+                    if (!Directory.Exists(Apk_Path))
+                    {
+                        return false;
+                    }
+
+                    GetTypefile(Apk_Path, "apk", lst);
+                    foreach (FileInfo shpFile in lst)
+                    {
+                        Action action_text = () =>
+                        {
+                            TextBox1.AppendText("\r\n开始安装应用：\r\n" + shpFile.FullName);
+                        };
+
+                        TextBox1.Dispatcher.BeginInvoke(action_text);
+                        result = Execute("adb install " + shpFile.FullName, 0);
+                    }
+                    if (result.Length == 0)
+                    {
+                        return false;
+                    }
+                    return true;
+                });
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private async void Button_Click_APK_Install(object sender, RoutedEventArgs e)
+        {
+            bool ret;
+            TextBox1.Text = "开始安装apk...";
+            ret = await AsyncTask_Apk_Install();
+            if (ret)
+            {
+                TextBox1.AppendText("\r\n" + "所有apk安装完成!!!");
+            }
+            else
+            {
+                TextBox1.AppendText("\r\n" + "apk文件不存在，安装失败!!!");
             }
         }
     }

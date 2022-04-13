@@ -1,4 +1,4 @@
-# Pax_Gpio_Tools_V1.0.0
+# Pax_Gpio_Tools_V1.0.1
 ## 界面
 ![image](Images/tools.png)
 ---
@@ -36,9 +36,9 @@
 ```
 获取全部GPIO信息。
 ```
-* PMIC
+* 解锁
 ```
-获取MT6357所有LDO和register信息。
+unlock设备后，机器能够正常remount。
 ```
 * 内存
 ```
@@ -52,15 +52,35 @@
 ```
 注意：需要将该工具安装到非C盘路径，截图成功后保存在安装目录的Images目录下。
 ```
+* 内核utc
+```
+将log/debuglogger目录所有的kernel log转换成带有utc时间的log。
+```
 * 提取log
 ```
 提取MTK DebugLogger生成的log文件，成功后保存在安装目录的debuglogger目录下。
 ```
-* 自动检测
+* 清空log
 ```
-自动检测平台mt_gpio文件节点路径。
+清空log/debuglogger目录下所有log文件。
+```
+* scp获取
+```
+抓取scp打印，sensor hub调试专用。
+```
+* dumpsys
+```
+提取android dumpsys信息，保存到log目录下。
+```
+* apk
+```
+将需要安装的apk文件放到apk目录下，点击apk按钮将全部自动安装到机器。
 ```
 * clear
 ```
 清屏。
+```
+* save
+```
+将屏幕信息保存至log目录。
 ```

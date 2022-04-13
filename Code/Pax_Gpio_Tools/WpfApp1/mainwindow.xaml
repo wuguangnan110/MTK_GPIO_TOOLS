@@ -22,8 +22,8 @@
         <Button Content="机型信息" HorizontalAlignment="Left" Margin="30,18,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Version"/>
         <Button Content="获取全部" HorizontalAlignment="Left" Margin="127,18,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_All_Gpio"/>
         <TextBox Name="TextBox1" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Left" Height="537" Margin="30,136,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="902" TextChanged="TextBox_TextChanged" FontSize="14" Grid.ColumnSpan="2"/>
-        <Button Content="帮助" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="60" Height="30" Click="Button_Click_help" RenderTransformOrigin="-0.305,0.564" Margin="849,18,0,0" Grid.ColumnSpan="2"/>
-        <Button Content="清空log" HorizontalAlignment="Left" Margin="641,18,0,0" VerticalAlignment="Top" Width="58" Height="30" Click="Button_Click_Clear_MTK_Log"/>
+        <Button Content="帮助" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="46" Height="30" Click="Button_Click_help" RenderTransformOrigin="-0.305,0.564" Margin="863,18,0,0" Grid.ColumnSpan="2"/>
+        <Button Content="清空log" HorizontalAlignment="Left" Margin="621,18,0,0" VerticalAlignment="Top" Width="58" Height="30" Click="Button_Click_Clear_MTK_Log"/>
         <Button Content="clear" HorizontalAlignment="Left" Margin="478,696,0,0" VerticalAlignment="Top" Width="44" Height="27" Click="Button_Click_Clear_Log" RenderTransformOrigin="1.581,8.591"/>
         <ComboBox Name="comboBox1" IsEditable="True"  HorizontalAlignment="Left" Margin="255,18,0,0" VerticalAlignment="Top" Width="51" Height="30" RenderTransformOrigin="0.497,-0.226" SelectionChanged="ComboBox_SelectionChanged" FontSize="14"/>
 
@@ -57,16 +57,17 @@
         <Button Content="解锁" HorizontalAlignment="Left" Margin="311,18,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Unlock_Android"/>
         <Button Content="内存" Name="Button_mem" HorizontalAlignment="Left" Margin="359,18,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Mem_Info"/>
         <Button Content="电池" HorizontalAlignment="Left" Margin="407,18,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Battery_Info"/>
-        <Button Content="提取log" HorizontalAlignment="Left" Margin="582,18,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_MTK_Log"/>
-        <Button Content="截屏" HorizontalAlignment="Left" Margin="455,18,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_ScreenCap"/>
-        <Button Content="内核utc" HorizontalAlignment="Left" Margin="523,18,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Kernel_To_UTC"/>
+        <Button Content="提取log" HorizontalAlignment="Left" Margin="562,18,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_MTK_Log"/>
+        <Button Content="截屏" HorizontalAlignment="Left" Margin="455,18,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_ScreenCap"/>
+        <Button Content="内核utc" HorizontalAlignment="Left" Margin="503,18,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Kernel_To_UTC"/>
         <Label Content="  R1 R0" Name="R1R0" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="45" Visibility="Collapsed" Grid.Column="1"/>
         <ComboBox x:Name="R1R0_Value" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="45" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="R0R1_SelectionChanged10" Visibility="Collapsed" Grid.Column="1"/>
 
         <Button Content="save" HorizontalAlignment="Left" Margin="430,696,0,0" VerticalAlignment="Top" Width="43" Height="27" RenderTransformOrigin="1.581,8.591" Click="Button_Click"/>
-        <Button Content="scp获取" Name="Button_log" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="61" Height="30" Click="Button_Click_Scp_Log" RenderTransformOrigin="-0.305,0.564" Margin="704,18,0,0"/>
+        <Button Content="scp获取" Name="Button_log" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="61" Height="30" Click="Button_Click_Scp_Log" RenderTransformOrigin="-0.305,0.564" Margin="684,18,0,0"/>
         <ProgressBar Name ="ProgressBar" HorizontalAlignment="Left" Height="18" Margin="30,673,0,0" VerticalAlignment="Top" Width="902" Grid.ColumnSpan="2"/>
-        <Button Content="dumpsys" x:Name="Button_dumpsys"  VerticalAlignment="Top" Height="30" RenderTransformOrigin="-0.305,0.564" Margin="770,18,0,0" Click="Button_dumpsys_Click" HorizontalAlignment="Left" Width="74"/>
+        <Button Content="dumpsys" x:Name="Button_dumpsys"  VerticalAlignment="Top" Height="30" RenderTransformOrigin="-0.305,0.564" Margin="750,18,0,0" Click="Button_dumpsys_Click" HorizontalAlignment="Left" Width="60"/>
+        <Button Content="apk" HorizontalAlignment="Left" Margin="815,18,0,0" VerticalAlignment="Top" Width="43" Height="29" Click="Button_Click_APK_Install"/>
     </Grid>
 
 </Window>

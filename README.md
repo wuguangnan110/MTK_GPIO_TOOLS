@@ -72,6 +72,10 @@ unlock设备后，机器能够正常remount。
 ```
 提取android dumpsys信息，保存到log目录下。
 ```
+* apk
+```
+将需要安装的apk文件放到apk目录下，点击apk按钮将全部自动安装到机器。
+```
 * clear
 ```
 清屏。

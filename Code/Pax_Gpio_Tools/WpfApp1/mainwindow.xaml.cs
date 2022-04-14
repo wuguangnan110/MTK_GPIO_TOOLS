@@ -987,7 +987,7 @@ namespace WpfApp1
                 Action action_battery = () =>
                 {
                     //TextBox1.Text = TextBox1.Text + "  current：";
-                    TextBox1.Text = Adb_Output;
+                    TextBox1.AppendText("\r\n" + Adb_Output);
                 };
                 Action action_battery_reg = () =>
                 {

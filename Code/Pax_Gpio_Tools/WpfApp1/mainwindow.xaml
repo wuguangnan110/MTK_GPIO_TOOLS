@@ -8,9 +8,7 @@
         Title="Pax Gpio Tool V1.0.1    Author : wugangnan   E-Mail : 569542647@qq.com" Height="773.628" Width="979">
     <Grid Margin="0,0,0,5">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="741*"/>
-            <ColumnDefinition Width="65*"/>
-            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush>
@@ -21,8 +19,8 @@
         </Grid.Background>
         <Button Content="机型信息" HorizontalAlignment="Left" Margin="30,18,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Version"/>
         <Button Content="获取全部" HorizontalAlignment="Left" Margin="127,18,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_All_Gpio"/>
-        <TextBox Name="TextBox1" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Left" Height="537" Margin="30,136,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="902" TextChanged="TextBox_TextChanged" FontSize="14" Grid.ColumnSpan="2"/>
-        <Button Content="帮助" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="46" Height="30" Click="Button_Click_help" RenderTransformOrigin="-0.305,0.564" Margin="863,18,0,0" Grid.ColumnSpan="2"/>
+        <TextBox Name="TextBox1" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Left" Height="537" Margin="30,136,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="902" TextChanged="TextBox_TextChanged" FontSize="14"/>
+        <Button Content="帮助" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="46" Height="30" Click="Button_Click_help" RenderTransformOrigin="-0.305,0.564" Margin="863,18,0,0"/>
         <Button Content="清空log" HorizontalAlignment="Left" Margin="621,18,0,0" VerticalAlignment="Top" Width="58" Height="30" Click="Button_Click_Clear_MTK_Log"/>
         <Button Content="clear" HorizontalAlignment="Left" Margin="478,696,0,0" VerticalAlignment="Top" Width="44" Height="27" Click="Button_Click_Clear_Log" RenderTransformOrigin="1.581,8.591"/>
         <ComboBox Name="comboBox1" IsEditable="True"  HorizontalAlignment="Left" Margin="255,18,0,0" VerticalAlignment="Top" Width="51" Height="30" RenderTransformOrigin="0.497,-0.226" SelectionChanged="ComboBox_SelectionChanged" FontSize="14"/>
@@ -35,7 +33,7 @@
         <Label Content="     DOUT" HorizontalAlignment="Left" Margin="356,62,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="94"/>
         <Label Content="     DIN" HorizontalAlignment="Left" Margin="456,62,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="89"/>
         <Label Content="   PULL EN" HorizontalAlignment="Left" Margin="722,62,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" RenderTransformOrigin="1.769,0.444" Width="88"/>
-        <Label Content="   PULL SEL" HorizontalAlignment="Left" Margin="818,62,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" RenderTransformOrigin="1.736,0.404" Width="91" Grid.ColumnSpan="2"/>
+        <Label Content="   PULL SEL" HorizontalAlignment="Left" Margin="818,62,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" RenderTransformOrigin="1.736,0.404" Width="91"/>
         <Button Content="获取" HorizontalAlignment="Left" Margin="207,18,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Gpio"/>
         <Label Content="   IES" HorizontalAlignment="Left" Margin="668,62,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="47"/>
         <Label Name="GPIO" Content="000" HorizontalAlignment="Left" Margin="71,96,0,0" VerticalAlignment="Top" Height="27" Width="49"/>
@@ -46,26 +44,26 @@
 
         <ComboBox x:Name="DIN" HorizontalAlignment="Left" Margin="456,95,0,0" VerticalAlignment="Top" Width="89" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="DIN_SelectionChanged4"/>
         <ComboBox x:Name="IES" HorizontalAlignment="Left" Margin="668,95,0,0" VerticalAlignment="Top" Width="47" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="IES_SelectionChanged7"/>
-        <ComboBox x:Name="PULLSEL" HorizontalAlignment="Left" Margin="818,95,0,0" VerticalAlignment="Top" Width="91" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="PULLSEL_SelectionChanged9" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="PULLSEL" HorizontalAlignment="Left" Margin="818,95,0,0" VerticalAlignment="Top" Width="91" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="PULLSEL_SelectionChanged9"/>
         <ComboBox x:Name="PULLEN" HorizontalAlignment="Left" Margin="722,95,0,0" VerticalAlignment="Top" Width="88" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="PULLEN_SelectionChanged8"/>
         <Label Content="SMT" HorizontalAlignment="Left" Margin="613,62,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="49"/>
         <Label Content=" DRIVE" HorizontalAlignment="Left" Margin="551,62,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="56" RenderTransformOrigin="2.441,0.525"/>
         <ComboBox x:Name="DRIVE" HorizontalAlignment="Left" Margin="551,95,0,0" VerticalAlignment="Top" Width="56" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="DRIVE_SelectionChanged5"/>
         <ComboBox x:Name="SMT" HorizontalAlignment="Left" Margin="613,95,0,0" VerticalAlignment="Top" Width="49" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="SMT_SelectionChanged6"/>
         <Button Content="set" HorizontalAlignment="Left" Margin="30,98,0,0" VerticalAlignment="Top" Width="35" Background="#FF28BF36" Click="Button_Click_Set_Gpio_Value"/>
-        <Ellipse Name="led" Fill="#FFDC1111" HorizontalAlignment="Left" Height="10" Margin="43,18,0,0" Stroke="Red" VerticalAlignment="Top" Width="10" RenderTransformOrigin="-0.682,-3" Grid.Column="1"/>
+        <Ellipse Name="led" Fill="#FFDC1111" HorizontalAlignment="Left" Height="10" Margin="925,18,0,0" Stroke="Red" VerticalAlignment="Top" Width="10" RenderTransformOrigin="-0.682,-3"/>
         <Button Content="解锁" HorizontalAlignment="Left" Margin="311,18,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Unlock_Android"/>
         <Button Content="内存" Name="Button_mem" HorizontalAlignment="Left" Margin="359,18,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Mem_Info"/>
         <Button Content="电池" HorizontalAlignment="Left" Margin="407,18,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_Battery_Info"/>
         <Button Content="提取log" HorizontalAlignment="Left" Margin="562,18,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Get_MTK_Log"/>
         <Button Content="截屏" HorizontalAlignment="Left" Margin="455,18,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_ScreenCap"/>
         <Button Content="内核utc" HorizontalAlignment="Left" Margin="503,18,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="-0.432,-0.643" Height="30" Click="Button_Click_Kernel_To_UTC"/>
-        <Label Content="  R1 R0" Name="R1R0" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="45" Visibility="Collapsed" Grid.Column="1"/>
-        <ComboBox x:Name="R1R0_Value" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="45" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="R0R1_SelectionChanged10" Visibility="Collapsed" Grid.Column="1"/>
+        <Label Content="  R1 R0" Name="R1R0" HorizontalAlignment="Left" Margin="892,79,0,0" VerticalAlignment="Top" Background="#FF497FCD" FontSize="10" Width="45" Visibility="Collapsed"/>
+        <ComboBox x:Name="R1R0_Value" HorizontalAlignment="Left" Margin="892,112,0,0" VerticalAlignment="Top" Width="45" Height="24" RenderTransformOrigin="0.497,-0.226" SelectionChanged="R0R1_SelectionChanged10" Visibility="Collapsed"/>
 
         <Button Content="save" HorizontalAlignment="Left" Margin="430,696,0,0" VerticalAlignment="Top" Width="43" Height="27" RenderTransformOrigin="1.581,8.591" Click="Button_Click"/>
         <Button Content="scp获取" Name="Button_log" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="61" Height="30" Click="Button_Click_Scp_Log" RenderTransformOrigin="-0.305,0.564" Margin="684,18,0,0"/>
-        <ProgressBar Name ="ProgressBar" HorizontalAlignment="Left" Height="18" Margin="30,673,0,0" VerticalAlignment="Top" Width="902" Grid.ColumnSpan="2"/>
+        <ProgressBar Name ="ProgressBar" HorizontalAlignment="Left" Height="18" Margin="30,673,0,0" VerticalAlignment="Top" Width="902"/>
         <Button Content="dumpsys" x:Name="Button_dumpsys"  VerticalAlignment="Top" Height="30" RenderTransformOrigin="-0.305,0.564" Margin="750,18,0,0" Click="Button_dumpsys_Click" HorizontalAlignment="Left" Width="60"/>
         <Button Content="apk" HorizontalAlignment="Left" Margin="815,18,0,0" VerticalAlignment="Top" Width="43" Height="29" Click="Button_Click_APK_Install"/>
     </Grid>

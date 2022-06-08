@@ -70,7 +70,8 @@ def kernel_to_utc(klog, llog):
         if m:
             (ktime, atime, usec) = m.group(1,2,3)
             time_sec_int = time.mktime(time.strptime(atime, "%Y-%m-%d %H:%M:%S"))
-            time_sec = time_sec_int + float(usec) - float(ktime)
+            #60*60*8 It is the time difference of East Eighth District, it needs to be set when there is no internet connection wugn add 20220422
+            time_sec = time_sec_int + float(usec) - float(ktime) + 60*60*8
 
             if (debug_enable):
                 print "*"

@@ -1189,8 +1189,12 @@ namespace WpfApp1
             {
                 if (Directory.Exists(Log_Path))
                 {
-                    Clear_Directory(Log_Path);
-                    TextBox1.Text = "MTK log文件删除成功！" + "\r\n" + Environment.CurrentDirectory + "\\log\\debuglogger";
+                    MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Are you sure?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+                    if (messageBoxResult == MessageBoxResult.Yes)
+                    {
+                        Clear_Directory(Log_Path);
+                        TextBox1.Text = "MTK log文件删除成功！" + "\r\n" + Environment.CurrentDirectory + "\\log\\debuglogger";
+                    }
                 }
             }
             catch
@@ -1556,15 +1560,18 @@ namespace WpfApp1
         private async void Button_Click_APK_Install(object sender, RoutedEventArgs e)
         {
             bool ret;
-            TextBox1.Text = "开始安装apk...";
-            ret = await AsyncTask_Apk_Install();
-            if (ret)
+            if (adb_status)
             {
-                TextBox1.AppendText("\r\n" + "所有apk安装完成!!!");
-            }
-            else
-            {
-                TextBox1.AppendText("\r\n" + "apk文件不存在，安装失败!!!");
+                TextBox1.Text = "开始安装apk...";
+                ret = await AsyncTask_Apk_Install();
+                if (ret)
+                {
+                    TextBox1.AppendText("\r\n" + "所有apk安装完成!!!");
+                }
+                else
+                {
+                    TextBox1.AppendText("\r\n" + "apk文件不存在，安装失败!!!");
+                }
             }
         }
     }
